@@ -1,0 +1,42 @@
+.special{
+    background: transparent;
+    display: inline-block;
+}
+
+.special:before{
+    background-color: transparent;
+    transition; background-color 0.2s ease,opacity;
+    content: '';
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+    opacity: 0;
+}
+.special:hover:before{
+    position:fixed;
+    transition: background-color 0.2s ease, opacity;
+    opacity: 1;
+}
+.special:hover:before{
+    background-color: black;
+}
+
+
+button{border: none;
+    background: white;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease; 
+}
+
+button:hover {
+    background: rgba(0,0,0,0);
+    color: white;
+    box-shadow: inset 0 0 0 3px white;
+}
